@@ -47,7 +47,8 @@ body {
 .hero-image {
     width: 300px;
     height: auto;
-    padding: 20px
+    padding: 20px;
+    border-radius: 8%;
 }
 
 .hero .btn {
@@ -158,4 +159,18 @@ body {
 
 .contact a {
     color: #f64a4c;
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-text {
+    max-width: 100%;
+  }
+  .hero-image {
+    width: 80%;
+    padding: 20px 0;
+  }
 }
